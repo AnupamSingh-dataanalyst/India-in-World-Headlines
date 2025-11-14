@@ -23,10 +23,10 @@ jobs:
     
     - name: Install dependencies
       run: |
-        pip install feedparser requests
+        pip install -r requirements.txt
     
-    - name: Run India News Bot
+    - name: India in World Headlines
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       run: |
-        python india_news_bot.py
+        python india_new.py
