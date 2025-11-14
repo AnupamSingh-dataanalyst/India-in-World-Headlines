@@ -296,8 +296,11 @@ Provide analysis in this EXACT JSON format (no other text):
 if __name__ == "__main__":
     import os
     # Get webhook from environment variable (GitHub Secret)
-    DISCORD_WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK')
+    discord_webhook_url = os.environ.get('DISCORD_WEBHOOK')
     
-    if not DISCORD_WEBHOOK_URL:
+    if not discord_webhook_url:
         print("ERROR: DISCORD_WEBHOOK environment variable not set!")
         exit(1)
+    
+    bot = IndiaNewsBot(discord_webhook_url)
+    bot.run()
