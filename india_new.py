@@ -165,8 +165,8 @@ Provide analysis in this EXACT JSON format (no other text):
         
         # Header embed
         embeds.append({
-            "title": "🌍 What is world saying about India",
-            "description": f"Found **{len(articles_with_analysis)}** articles mentioning India",
+            "title": "🌍 What is world writing about India",
+            "description": f"Found **{len(articles_with_analysis)}** articles about India",
             "color": 16744192,  # Orange color
             "timestamp": datetime.utcnow().isoformat()
         })
