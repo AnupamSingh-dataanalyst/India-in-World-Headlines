@@ -124,7 +124,7 @@ Provide analysis in this EXACT JSON format (no other text):
         return {
             "sentiment": sentiment,
             "category": category,
-            "reasoning": "Keyword-based analysis"
+            "reasoning": "Anupam Singh with Python-AI"
         }
     
     def get_emoji(self, sentiment, category):
@@ -251,7 +251,7 @@ Provide analysis in this EXACT JSON format (no other text):
     def run(self):
         """Main execution"""
         print("="*60)
-        print("What is world saying about India - News Bot")
+        print("What is world writing about India - News Bot")
         print("="*60)
         
         # Fetch articles
