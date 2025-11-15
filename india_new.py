@@ -257,7 +257,7 @@ Provide analysis in this EXACT JSON format (no other text):
         # Fetch articles
         print("\n1. Fetching articles from news sources...")
         articles = self.fetch_articles()
-        print(f"\n✓ Found {len(articles)} articles mentioning India\n")
+        print(f"\n✓ Found {len(articles)} articles about India\n")
         
         if not articles:
             print("No articles found. Sending notification...")
